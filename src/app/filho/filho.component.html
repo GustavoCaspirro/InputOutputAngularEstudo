@@ -1,0 +1,8 @@
+<p>filho works!</p>
+
+<ul>
+  <li *ngFor="let person of receiveFamily">
+    {{person.name}} {{person.lastName}} - {{ person.age }}
+    <span *ngIf="receiveFamily.lenght === 0">Família não encontrada!</span>
+  </li>
+</ul>
